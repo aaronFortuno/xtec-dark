@@ -856,6 +856,7 @@ html.xtec-dark .table-striped tbody tr:nth-of-type(even) td {
 html.xtec-dark .table-hover tbody tr:hover,
 html.xtec-dark .table-hover tbody tr:hover td {
   background-color: #2c2014 !important;
+  color: #c2c5aa !important;
 }
 
 html.xtec-dark .generaltable {
@@ -895,6 +896,15 @@ html.xtec-dark .generaltable tbody tr:hover,
 html.xtec-dark .generaltable tbody tr:hover td,
 html.xtec-dark .generaltable tbody tr:hover td.sticky-column {
   background-color: #2c2014 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .generaltable tbody tr:hover a {
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .generaltable tbody tr:hover.dimmed_text a:not(.menu-action) {
+  color: #c8a878 !important;
 }
 
 /* ============================================
@@ -1690,6 +1700,118 @@ html.xtec-dark .gradetreebox th {
 html.xtec-dark .user-grade .generaltable td,
 html.xtec-dark .gradetreebox td {
   background-color: #221a0e !important;
+}
+
+/* ============================================
+   28b. RUBRIC (Grading criteria)
+   ============================================ */
+
+html.xtec-dark .gradingform_rubric .criterion {
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .gradingform_rubric .criterion.even td {
+  background: #1c1408 !important;
+}
+
+html.xtec-dark .gradingform_rubric .criterion.odd td {
+  background: #221a0e !important;
+}
+
+html.xtec-dark .gradingform_rubric .criterion .levels .level {
+  border-left-color: #3d3020 !important;
+}
+
+html.xtec-dark .gradingform_rubric .criterion .levels .level.last {
+  border-right-color: #3d3020 !important;
+}
+
+html.xtec-dark .gradingform_rubric .criterion .levels {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark .path-mod-assign [data-region="grade-panel"] .gradingform_rubric .criterion .levels {
+  background-color: #191208 !important;
+}
+
+/* Level states */
+html.xtec-dark .gradingform_rubric .criterion .level.checked {
+  background: #1e2810 !important;
+  border-color: #414833 !important;
+}
+
+html.xtec-dark .gradingform_rubric .criterion .level.currentchecked {
+  background: #302010 !important;
+}
+
+html.xtec-dark .gradingform_rubric.evaluate .criterion .levels .level:hover {
+  background: #2c2014 !important;
+}
+
+html.xtec-dark .gradingform_rubric.evaluate .criterion .levels .level.checked {
+  border-left-color: #3d3020 !important;
+}
+
+/* Score text */
+html.xtec-dark .gradingform_rubric .criterion .score {
+  color: #a4ac86 !important;
+}
+
+/* Definition and description text */
+html.xtec-dark .gradingform_rubric .criterion .description,
+html.xtec-dark .gradingform_rubric .criterion .definition {
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .gradingform_rubric .plainvalue.empty {
+  color: #7a6e5a !important;
+}
+
+/* Error and special states */
+html.xtec-dark .gradingform_rubric .criterion .levels.error {
+  border-color: #8b3020 !important;
+}
+
+html.xtec-dark .gradingform_rubric .criterion .description.error,
+html.xtec-dark .gradingform_rubric .criterion .definition.error,
+html.xtec-dark .gradingform_rubric .criterion .score.error {
+  background: #2e1410 !important;
+}
+
+html.xtec-dark .gradingform_rubric-regrade {
+  background: #2e1410 !important;
+  border-color: #8b3020 !important;
+}
+
+html.xtec-dark .gradingform_rubric-restored {
+  background: #302010 !important;
+  border-color: #936639 !important;
+}
+
+/* Grading panel checked radio */
+html.xtec-dark .gradingpanel-gradingform_rubric [aria-checked="true"] {
+  border-color: #a68a64 !important;
+}
+
+/* Edit form status */
+html.xtec-dark .gradingform_rubric_editform .status {
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .gradingform_rubric_editform .status.ready {
+  background-color: #1e2810 !important;
+  border-color: #414833 !important;
+}
+
+html.xtec-dark .gradingform_rubric_editform .status.draft {
+  background-color: #302010 !important;
+  border-color: #936639 !important;
+}
+
+/* Submission status table specific */
+html.xtec-dark .submissionstatustable .generaltable tbody tr:hover,
+html.xtec-dark .submissionstatustable .generaltable tbody tr:hover td {
+  color: #c2c5aa !important;
 }
 
 /* ============================================

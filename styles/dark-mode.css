@@ -114,6 +114,16 @@ html.xtec-dark .secondary-navigation {
 
 html.xtec-dark .secondary-navigation .navigation {
   background-color: #191208 !important;
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .moremenu .nav-tabs {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark .secondary-navigation .navigation .nav-tabs {
+  background-color: #191208 !important;
+  border-color: transparent !important;
 }
 
 html.xtec-dark .secondary-navigation .nav-link {
@@ -245,7 +255,20 @@ html.xtec-dark .course-content ul li.section.main:not(.course-section) {
 }
 
 html.xtec-dark .course-section .section-item {
+  background-color: #191208 !important;
   border-color: #3d3020 !important;
+}
+
+/* Format-grid section-0 variant */
+html.xtec-dark .format-grid:not(.editing):not(#page-course-view-section-grid) #section-0.course-section .section-item {
+  background-color: #1e1610 !important;
+  border-color: transparent !important;
+}
+
+/* Hidden/orphaned sections */
+html.xtec-dark .course-section.hidden .section-item,
+html.xtec-dark .course-section.orphaned .section-item {
+  background-color: #1e1610 !important;
 }
 
 html.xtec-dark .course-section .section-summary-activities + .section {

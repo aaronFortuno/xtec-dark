@@ -412,6 +412,10 @@ html.xtec-dark .block_myoverview {
   background-color: #221a0e !important;
 }
 
+html.xtec-dark .block_timeline .paged-content-page-container {
+  background-color: #221a0e !important;
+}
+
 /* Course cards on dashboard */
 html.xtec-dark .dashboard-card,
 html.xtec-dark .course-card {
@@ -1457,12 +1461,52 @@ html.xtec-dark .bg-light {
   background-color: #1e1610 !important;
 }
 
+html.xtec-dark .bg-primary {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
 html.xtec-dark .bg-secondary {
   background-color: #2c2014 !important;
 }
 
 html.xtec-dark .bg-dark {
   background-color: #140e04 !important;
+}
+
+html.xtec-dark .bg-info {
+  background-color: #2c2014 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .bg-success {
+  background-color: #1e2810 !important;
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .bg-warning {
+  background-color: #302010 !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .bg-danger {
+  background-color: #2e1410 !important;
+  color: #d8a8a0 !important;
+}
+
+/* Block footer elements (bright blue on dashboard) */
+html.xtec-dark .block footer,
+html.xtec-dark .block .footer,
+html.xtec-dark .no-overflow > footer {
+  background: #1e1610 !important;
+  border-color: #3d3020 !important;
+  color: #a09880 !important;
+}
+
+html.xtec-dark .block footer a,
+html.xtec-dark .block .footer a,
+html.xtec-dark .no-overflow > footer a {
+  color: #c8a878 !important;
 }
 
 html.xtec-dark .text-dark {

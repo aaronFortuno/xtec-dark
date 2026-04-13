@@ -559,7 +559,9 @@ html.xtec-dark .form-autocomplete-selection {
   border-color: #3d3020 !important;
 }
 
-html.xtec-dark .form-autocomplete-selection [role="option"] {
+html.xtec-dark .form-autocomplete-selection [role="option"],
+html.xtec-dark .form-autocomplete-selection [role="listitem"],
+html.xtec-dark .form-autocomplete-selection span[data-value] {
   background-color: #382810 !important;
   color: #c8a878 !important;
   border-color: #4e3e28 !important;
@@ -572,6 +574,24 @@ html.xtec-dark .form-autocomplete-selection [data-active-selection="true"] {
 html.xtec-dark .form-autocomplete-selection.focus,
 html.xtec-dark .form-autocomplete-selection:focus {
   box-shadow: 0 0 0 .2rem rgba(166, 138, 100, 0.5) !important;
+}
+
+/* Generic recipient pills (d-flex.flex-wrap > div pattern in local_mail) */
+html.xtec-dark .d-flex.flex-wrap > div > .badge,
+html.xtec-dark .d-flex.flex-wrap > .badge,
+html.xtec-dark .d-flex.flex-wrap > div[class*="tag"],
+html.xtec-dark .d-flex.flex-wrap > [class*="tag"] {
+  background-color: #382810 !important;
+  color: #c8a878 !important;
+  border-color: #4e3e28 !important;
+}
+
+/* Broader pill catch: any badge-like child inside a flex-wrap container near forms */
+html.xtec-dark .form-group .d-flex.flex-wrap > div,
+html.xtec-dark [data-fieldtype] .d-flex.flex-wrap > div {
+  background-color: #382810 !important;
+  color: #c8a878 !important;
+  border-radius: .5rem;
 }
 
 html.xtec-dark .form-autocomplete-suggestions {
@@ -1233,6 +1253,43 @@ html.xtec-dark .tox .tox-tbtn:focus::after {
 html.xtec-dark .tox .tox-tbtn--bespoke,
 html.xtec-dark .tox .tox-number-input {
   background: #221a0e !important;
+}
+
+/* Toolbar SVG icons — force cream fill */
+html.xtec-dark .tox .tox-icon svg,
+html.xtec-dark .tox .tox-tbtn svg,
+html.xtec-dark .tox .tox-mbtn svg {
+  fill: #c2c5aa !important;
+}
+
+html.xtec-dark .tox .tox-tbtn:hover svg,
+html.xtec-dark .tox .tox-mbtn:hover svg {
+  fill: #ddd8c4 !important;
+}
+
+html.xtec-dark .tox .tox-tbtn--disabled svg,
+html.xtec-dark .tox .tox-tbtn:disabled svg {
+  fill: #5a4e38 !important;
+}
+
+html.xtec-dark .tox .tox-tbtn--active svg,
+html.xtec-dark .tox .tox-tbtn--enabled svg {
+  fill: #c8a878 !important;
+}
+
+/* Collection item icons (menu dropdowns) */
+html.xtec-dark .tox .tox-collection__item-icon svg {
+  fill: #b6ad90 !important;
+}
+
+html.xtec-dark .tox .tox-collection__item-checkmark svg {
+  fill: #a4ac86 !important;
+}
+
+/* Caret/chevron icons */
+html.xtec-dark .tox .tox-tbtn__select-chevron svg,
+html.xtec-dark .tox .tox-split-button__chevron svg {
+  fill: #a09880 !important;
 }
 
 /* Split button */

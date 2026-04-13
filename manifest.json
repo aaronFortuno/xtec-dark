@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "IOC XTEC Dark Mode",
+  "version": "1.0.0",
+  "description": "Mode fosc per al campus virtual de l'IOC (ioc.xtec.cat). Redueix la fatiga visual en entorns foscos.",
+  "permissions": ["storage", "activeTab"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://ioc.xtec.cat/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles/dark-mode.css"],
+      "matches": ["*://ioc.xtec.cat/*"]
+    }
+  ]
+}

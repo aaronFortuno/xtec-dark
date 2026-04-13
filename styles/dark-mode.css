@@ -1,0 +1,2153 @@
+/*
+ * IOC XTEC Dark Mode — Paleta Terrosa
+ * Mode fosc per al campus virtual de l'IOC (ioc.xtec.cat)
+ * Tema base: boostioc (Boost / Bootstrap 4 / Moodle 4.x)
+ *
+ * Paleta base: #582f0e #7f4f24 #936639 #a68a64 #b6ad90
+ *              #c2c5aa #a4ac86 #656d4a #414833 #333d29
+ */
+
+/* ============================================
+   1. CSS VARIABLES OVERRIDE
+   ============================================ */
+
+html.xtec-dark {
+  --primary: #a68a64;
+  --secondary: #2c2014;
+  --success: #656d4a;
+  --info: #a4ac86;
+  --warning: #c8956c;
+  --danger: #a04030;
+  --light: #1e1610;
+  --dark: #c2c5aa;
+  --gray: #7a6e5a;
+  --gray-dark: #b6ad90;
+  --white: #191208;
+  --blue: #a68a64;
+
+  color-scheme: dark;
+}
+
+/* ============================================
+   2. BASE ELEMENTS
+   ============================================ */
+
+html.xtec-dark body {
+  background-color: #191208 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark a {
+  color: #c8a878;
+}
+
+html.xtec-dark a:hover {
+  color: #dcc098;
+}
+
+html.xtec-dark hr {
+  border-color: #3d3020;
+}
+
+html.xtec-dark img {
+  opacity: 0.92;
+}
+
+html.xtec-dark pre,
+html.xtec-dark code {
+  background-color: #140e04 !important;
+  color: #b6ad90 !important;
+  border-color: #3d3020 !important;
+}
+
+/* ============================================
+   3. NAVBAR / TOP NAVIGATION
+   ============================================ */
+
+html.xtec-dark .navbar,
+html.xtec-dark .navbar.fixed-top {
+  background: #140e04 !important;
+  border-bottom-color: #3d3020 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.xtec-dark .navbar.fixed-top .divider {
+  background-color: #3d3020 !important;
+}
+
+html.xtec-dark .navbar-light .navbar-brand,
+html.xtec-dark .navbar-light .navbar-brand:hover,
+html.xtec-dark .navbar-light .navbar-nav .nav-link {
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .navbar-light .navbar-nav .nav-link:hover,
+html.xtec-dark .navbar-light .navbar-nav .nav-link:focus {
+  color: #ddd8c4 !important;
+}
+
+html.xtec-dark .primary-navigation {
+  background: #140e04 !important;
+}
+
+html.xtec-dark .primary-navigation .navigation .nav-link {
+  border-top-color: transparent !important;
+}
+
+html.xtec-dark .primary-navigation .moremenu .nav-link:hover {
+  border-bottom-color: #a68a64 !important;
+}
+
+html.xtec-dark .primary-navigation .nav-link {
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .primary-navigation .nav-link:hover,
+html.xtec-dark .primary-navigation .nav-link.active {
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .secondary-navigation {
+  background-color: #191208 !important;
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .secondary-navigation .navigation {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark .secondary-navigation .nav-link {
+  color: #a09880 !important;
+}
+
+html.xtec-dark .secondary-navigation .nav-link.active {
+  color: #c2c5aa !important;
+  border-bottom-color: #a68a64 !important;
+}
+
+html.xtec-dark .moremenu .nav-link {
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark #usernavigation .usermenu .login a,
+html.xtec-dark #usernavigation a {
+  color: #c2c5aa !important;
+}
+
+/* ============================================
+   4. PAGE LAYOUT & MAIN CONTENT
+   ============================================ */
+
+html.xtec-dark #page-wrapper {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark #page.drawers,
+html.xtec-dark #page {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark #page-content {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark #region-main-box,
+html.xtec-dark #region-main {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark .main-inner {
+  background-color: #191208 !important;
+}
+
+/* ============================================
+   5. DRAWERS / SIDEBARS
+   ============================================ */
+
+html.xtec-dark .drawer,
+html.xtec-dark .drawer.drawer-left,
+html.xtec-dark .drawer.drawer-right {
+  background-color: #160f06 !important;
+}
+
+html.xtec-dark .drawercontent {
+  background-color: #160f06 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .drawerheader {
+  background-color: #160f06 !important;
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark [data-region="drawer"] {
+  background-color: #160f06 !important;
+}
+
+html.xtec-dark [data-region="right-hand-drawer"] {
+  background-color: #160f06 !important;
+}
+
+html.xtec-dark .ai-drawer {
+  background-color: #160f06 !important;
+}
+
+html.xtec-dark #nav-drawer {
+  background-color: #160f06 !important;
+}
+
+/* Drawer scrollbar */
+html.xtec-dark .drawercontent::-webkit-scrollbar-track {
+  background: #160f06 !important;
+}
+
+html.xtec-dark .drawercontent::-webkit-scrollbar-thumb {
+  background: #3d3020 !important;
+}
+
+/* ============================================
+   6. COURSE CONTENT
+   ============================================ */
+
+html.xtec-dark .course-content {
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .section,
+html.xtec-dark .section .content {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark .section li.activity {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .section li.activity:hover {
+  background-color: #2c2014 !important;
+}
+
+/* --- Activity separators (border-top between activities) --- */
+html.xtec-dark .activity {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .bulkenabled .activity {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .section li.activity:not(.activity-wrapper).hasinfo {
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .course-content ul li.section.main:not(.course-section) {
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .course-section .section-item {
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .course-section .section-summary-activities + .section {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .divider hr {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .divider .divider-content {
+  background: linear-gradient(transparent 40%, #191208 40%, #191208 60%, transparent 60%) !important;
+}
+
+html.xtec-dark .section.hidden .divider .divider-content {
+  background: linear-gradient(transparent 40%, #1e1610 40%, #1e1610 60%, transparent 60%) !important;
+}
+
+html.xtec-dark .activity-navigation {
+  border-top-color: #3d3020 !important;
+}
+
+/* Format-grid separator */
+html.xtec-dark #page-course-view-section-grid.format-grid:not(.editing) .grid .section .activity {
+  border-top-color: #3d3020 !important;
+}
+
+/* --- Activity item card --- */
+html.xtec-dark .activity-item {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .activity-item:hover {
+  background-color: #2c2014 !important;
+}
+
+html.xtec-dark .activity-item.hiddenactivity {
+  background-color: #1e1610 !important;
+}
+
+/* Internal dividers within activity items */
+html.xtec-dark .activity-item .activity-altcontent.activity-description {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .activity-item .activity-afterlink {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .activity-item .activity-groupmode-info {
+  border-top-color: #3d3020 !important;
+}
+
+/* Subsection card border */
+html.xtec-dark .activity.subsection > .activity-item {
+  border-color: #3d3020 !important;
+}
+
+/* Editing mode outline */
+html.xtec-dark .editing .activity-item:hover:not(:has(.activity:hover)),
+html.xtec-dark .editing .activity-item.selected {
+  outline-color: #a68a64 !important;
+}
+
+html.xtec-dark .activity.dragging .activity-item {
+  border-color: #a68a64 !important;
+}
+
+/* Activity dates text */
+html.xtec-dark .activity-item .activity-dates {
+  color: #7a6e5a !important;
+}
+
+/* Activity grid inner elements (white cards within grid) */
+html.xtec-dark .activity-item .activity-grid div,
+html.xtec-dark .activity-item .activity-grid.noname-grid div {
+  background-color: transparent !important;
+  color: inherit !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .activity-item .activity-basis {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .activity-item .activity-actions {
+  background-color: transparent !important;
+}
+
+/* Module page activity header */
+html.xtec-dark .path-mod .activity-header:not(:empty) {
+  background-color: #1e1610 !important;
+}
+
+html.xtec-dark .path-mod .activity-information .activity-dates {
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .path-mod .activity-information .completion-info {
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .activityiconcontainer {
+  background-color: #382810 !important;
+}
+
+html.xtec-dark .activity-name-area a {
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .course-section-header {
+  background-color: #1e1610 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .sectionname,
+html.xtec-dark .sectionname a {
+  color: #ddd8c4 !important;
+}
+
+/* ============================================
+   7. CARDS & BLOCKS
+   ============================================ */
+
+html.xtec-dark .card {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .card-header {
+  background-color: #1e1610 !important;
+  border-bottom-color: #3d3020 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .card-body {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .card-footer {
+  background-color: #1e1610 !important;
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .card-title,
+html.xtec-dark .card-title a {
+  color: #ddd8c4 !important;
+}
+
+html.xtec-dark .block {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .block .card-body {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .block_myoverview {
+  background-color: #221a0e !important;
+}
+
+/* Course cards on dashboard */
+html.xtec-dark .dashboard-card,
+html.xtec-dark .course-card {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .course-card:hover {
+  background-color: #2c2014 !important;
+}
+
+/* ============================================
+   8. IOC CUSTOM COMPONENTS
+   ============================================ */
+
+html.xtec-dark .pestanyes .nav-link {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #a09880 !important;
+}
+
+html.xtec-dark .pestanyes .nav-link.active,
+html.xtec-dark .pestanyes .nav-link:hover {
+  background-color: #2c2014 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .collapsable-primari .card {
+  background-color: #1e1610 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .collapsable-detall .card {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .text-destacat {
+  background-color: #2c2014 !important;
+  border-color: #7f4f24 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .consell {
+  background-color: #1e2810 !important;
+  border-color: #414833 !important;
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .atencio {
+  background-color: #381c0a !important;
+  border-color: #582f0e !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .blauioc {
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .vermellioc {
+  color: #c86050 !important;
+}
+
+/* ============================================
+   9. FORMS
+   ============================================ */
+
+html.xtec-dark .form-control,
+html.xtec-dark .custom-select,
+html.xtec-dark select,
+html.xtec-dark textarea,
+html.xtec-dark input[type="text"],
+html.xtec-dark input[type="password"],
+html.xtec-dark input[type="email"],
+html.xtec-dark input[type="search"],
+html.xtec-dark input[type="url"],
+html.xtec-dark input[type="number"] {
+  background-color: #140e04 !important;
+  color: #c2c5aa !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .form-control:focus,
+html.xtec-dark .custom-select:focus {
+  background-color: #140e04 !important;
+  color: #ddd8c4 !important;
+  border-color: #a68a64 !important;
+  box-shadow: 0 0 0 0.2rem rgba(166, 138, 100, 0.25) !important;
+}
+
+html.xtec-dark .form-control:disabled,
+html.xtec-dark .form-control[readonly] {
+  background-color: #1e1610 !important;
+  color: #7a6e5a !important;
+}
+
+html.xtec-dark .form-control::placeholder {
+  color: #6a5e48 !important;
+}
+
+html.xtec-dark .mform .fitem {
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark label,
+html.xtec-dark .fitemtitle label {
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .form-check-input {
+  background-color: #140e04 !important;
+  border-color: #3d3020 !important;
+}
+
+/* ============================================
+   10. BUTTONS
+   ============================================ */
+
+html.xtec-dark .btn-primary {
+  background-color: #7f4f24 !important;
+  border-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .btn-primary:hover {
+  background-color: #936639 !important;
+  border-color: #936639 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .btn-secondary {
+  background-color: transparent !important;
+  border-color: #a68a64 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .btn-secondary:hover {
+  background-color: #a68a64 !important;
+  color: #191208 !important;
+}
+
+html.xtec-dark .btn-outline-secondary {
+  border-color: #3d3020 !important;
+  color: #a09880 !important;
+}
+
+html.xtec-dark .btn-outline-secondary:hover {
+  background-color: #2c2014 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .btn-link {
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .btn-danger {
+  background-color: #8b3020 !important;
+  border-color: #8b3020 !important;
+  color: #f0d8d0 !important;
+}
+
+html.xtec-dark .btn-danger:hover {
+  background-color: #a04030 !important;
+  border-color: #a04030 !important;
+}
+
+html.xtec-dark .btn-success {
+  background-color: #4a5530 !important;
+  border-color: #4a5530 !important;
+  color: #d0d8b8 !important;
+}
+
+html.xtec-dark .btn-success:hover {
+  background-color: #656d4a !important;
+  border-color: #656d4a !important;
+}
+
+html.xtec-dark .btn-warning {
+  background-color: #936639 !important;
+  border-color: #936639 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .btn-info {
+  background-color: #656d4a !important;
+  border-color: #656d4a !important;
+  color: #ddd8c4 !important;
+}
+
+html.xtec-dark .btn-light {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .btn-light:hover {
+  background-color: #2c2014 !important;
+  border-color: #4e3e28 !important;
+}
+
+html.xtec-dark .btn-dark {
+  background-color: #3d3020 !important;
+  border-color: #3d3020 !important;
+  color: #ddd8c4 !important;
+}
+
+html.xtec-dark .btn-dark:hover {
+  background-color: #4e3e28 !important;
+}
+
+/* ============================================
+   10b. COMPLETION BUTTONS ("Per fer", "Fet", etc.)
+   ============================================ */
+
+/* Default/generic completion button */
+html.xtec-dark .activity-item .activity-completion button.btn,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn {
+  background-color: #2c2014 !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .activity-item .activity-completion button.btn:hover,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn:hover {
+  background-color: #382810 !important;
+  border-color: #4e3e28 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .activity-item .activity-completion button.btn:focus,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn:focus {
+  box-shadow: 0 0 0 .2rem rgba(166, 138, 100, 0.3) !important;
+}
+
+/* "Per fer" / To-do (btn-secondary) */
+html.xtec-dark .activity-item .activity-completion button.btn-secondary,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn-secondary {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #7a6e5a !important;
+}
+
+html.xtec-dark .activity-item .activity-completion button.btn-secondary:hover,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn-secondary:hover {
+  background-color: #2c2014 !important;
+  border-color: #4e3e28 !important;
+  color: #a09880 !important;
+}
+
+/* "Fet" / Done (btn-primary) */
+html.xtec-dark .activity-item .activity-completion button.btn-primary,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn-primary {
+  background-color: #382810 !important;
+  border-color: #7f4f24 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .activity-item .activity-completion button.btn-primary:hover,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn-primary:hover {
+  background-color: #7f4f24 !important;
+  border-color: #936639 !important;
+  color: #f0ead6 !important;
+}
+
+/* Completed (btn-success) */
+html.xtec-dark .activity-item .activity-completion button.btn-success,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn-success {
+  background-color: #2a3318 !important;
+  border-color: #414833 !important;
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .activity-item .activity-completion button.btn-success:hover,
+html.xtec-dark .activity-item .activity-completion a[role="button"].btn-success:hover {
+  background-color: #414833 !important;
+  color: #c2c5aa !important;
+}
+
+/* Completion dialog popover */
+html.xtec-dark .activity-item .activity-completion .completion-dialog {
+  color: #b6ad90 !important;
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .activity-item .activity-completion .completion-dialog .editcompletion a {
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .activity-item .activity-completion .completion-dialog .editcompletion a:hover {
+  background-color: #2c2014 !important;
+}
+
+/* Dropdown active/focus state (Moodle blue -> warm) */
+html.xtec-dark .dropdown-item.active,
+html.xtec-dark .dropdown-item:active {
+  background-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+/* ============================================
+   11. DROPDOWNS & MODALS & POPOVERS
+   ============================================ */
+
+html.xtec-dark .dropdown-menu {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .dropdown-item {
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .dropdown-item:hover,
+html.xtec-dark .dropdown-item:focus {
+  background-color: #2c2014 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .dropdown-divider {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .modal-content {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .modal-header {
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .modal-header .close,
+html.xtec-dark .modal-header .btn-close {
+  color: #a09880 !important;
+}
+
+html.xtec-dark .modal-footer {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .modal-title {
+  color: #ddd8c4 !important;
+}
+
+html.xtec-dark .popover {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .popover-header {
+  background-color: #1e1610 !important;
+  border-bottom-color: #3d3020 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .popover-body {
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .tooltip-inner {
+  background-color: #140e04 !important;
+  color: #c2c5aa !important;
+}
+
+/* ============================================
+   12. TABLES
+   ============================================ */
+
+html.xtec-dark .table {
+  color: #b6ad90 !important;
+}
+
+/* Override theme's .table td, .table th { background-color: #fff !important } */
+html.xtec-dark .table th,
+html.xtec-dark .table td {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .table thead th,
+html.xtec-dark .table thead td {
+  background-color: #1e1610 !important;
+  border-bottom-color: #3d3020 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .table .thead-light th {
+  background-color: #1e1610 !important;
+  color: #b6ad90 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .table .thead-dark th {
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .table-striped tbody tr:nth-of-type(odd),
+html.xtec-dark .table-striped tbody tr:nth-of-type(2n+1) {
+  background-color: #1c1408 !important;
+}
+
+html.xtec-dark .table-striped tbody tr:nth-of-type(odd) td,
+html.xtec-dark .table-striped tbody tr:nth-of-type(2n+1) td {
+  background-color: #1c1408 !important;
+}
+
+html.xtec-dark .table-striped tbody tr:nth-of-type(even),
+html.xtec-dark .table-striped tbody tr:nth-of-type(even) td {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .table-hover tbody tr:hover,
+html.xtec-dark .table-hover tbody tr:hover td {
+  background-color: #2c2014 !important;
+}
+
+html.xtec-dark .generaltable {
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .generaltable th,
+html.xtec-dark .generaltable td {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .generaltable thead th,
+html.xtec-dark .generaltable thead td {
+  background-color: #1e1610 !important;
+}
+
+html.xtec-dark .generaltable thead .sticky-column {
+  background-color: #1e1610 !important;
+}
+
+html.xtec-dark .generaltable tbody tr:nth-of-type(odd),
+html.xtec-dark .generaltable tbody tr:nth-of-type(odd) td {
+  background-color: #1c1408 !important;
+}
+
+html.xtec-dark .generaltable tbody tr:nth-of-type(odd) .sticky-column {
+  background-color: #1c1408 !important;
+}
+
+html.xtec-dark .generaltable tbody tr:nth-of-type(even),
+html.xtec-dark .generaltable tbody tr:nth-of-type(even) td {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .generaltable tbody tr:hover,
+html.xtec-dark .generaltable tbody tr:hover td,
+html.xtec-dark .generaltable tbody tr:hover td.sticky-column {
+  background-color: #2c2014 !important;
+}
+
+/* ============================================
+   13. ALERTS
+   ============================================ */
+
+html.xtec-dark .alert-warning {
+  background-color: #302010 !important;
+  border-color: #582f0e !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .alert-danger {
+  background-color: #2e1410 !important;
+  border-color: #5a2820 !important;
+  color: #d8a8a0 !important;
+}
+
+html.xtec-dark .alert-success {
+  background-color: #1e2810 !important;
+  border-color: #414833 !important;
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .alert-info {
+  background-color: #1e2418 !important;
+  border-color: #414833 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .alert a {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+
+/* ============================================
+   14. LOGIN PAGE
+   ============================================ */
+
+html.xtec-dark.pagelayout-login #page,
+html.xtec-dark .pagelayout-login #page {
+  background: linear-gradient(135deg, #191208 0%, #221a0e 50%, #2c2014 100%) !important;
+}
+
+html.xtec-dark .login-container {
+  background-color: #221a0e !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6) !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .login-heading {
+  color: #ddd8c4 !important;
+}
+
+html.xtec-dark .login-divider {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .login-form .btn.btn-primary {
+  background-color: #7f4f24 !important;
+  border-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .login-form .btn.btn-primary:hover {
+  background-color: #936639 !important;
+  border-color: #936639 !important;
+}
+
+/* ============================================
+   15. FOOTER
+   ============================================ */
+
+html.xtec-dark #page-footer {
+  background-color: #140e04 !important;
+  border-top-color: #3d3020 !important;
+  color: #a09880 !important;
+}
+
+html.xtec-dark .footer-popover,
+html.xtec-dark .footer-content-popover {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #a09880 !important;
+}
+
+html.xtec-dark .footer-dark {
+  background-color: #140e04 !important;
+}
+
+/* ============================================
+   16. BREADCRUMBS
+   ============================================ */
+
+html.xtec-dark .breadcrumb {
+  background-color: transparent !important;
+}
+
+html.xtec-dark .breadcrumb-item a {
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .breadcrumb-item.active {
+  color: #a09880 !important;
+}
+
+html.xtec-dark .breadcrumb-item + .breadcrumb-item::before {
+  color: #7a6e5a !important;
+}
+
+/* ============================================
+   17. LISTS & LIST GROUPS
+   ============================================ */
+
+html.xtec-dark .list-group-item {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .list-group-item:hover {
+  background-color: #2c2014 !important;
+}
+
+html.xtec-dark .list-group-item.active {
+  background-color: #7f4f24 !important;
+  border-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+/* ============================================
+   18. MESSAGING & NOTIFICATIONS
+   ============================================ */
+
+html.xtec-dark [data-region="message-drawer"] {
+  background-color: #160f06 !important;
+}
+
+html.xtec-dark .message-app {
+  background-color: #160f06 !important;
+}
+
+html.xtec-dark .message {
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .notification-area {
+  background-color: #221a0e !important;
+}
+
+/* ============================================
+   19. CALENDAR
+   ============================================ */
+
+html.xtec-dark .calendar_event_course {
+  background-color: #2c2014 !important;
+}
+
+html.xtec-dark .maincalendar .calendarmonth td {
+  background-color: #191208 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .maincalendar .calendarmonth td:hover {
+  background-color: #2c2014 !important;
+}
+
+html.xtec-dark .maincalendar .calendarmonth .today {
+  background-color: #382810 !important;
+}
+
+/* ============================================
+   20. TEXT EDITOR (ATTO / TinyMCE)
+   ============================================ */
+
+html.xtec-dark .editor_atto_content,
+html.xtec-dark .editor_atto_wrap {
+  background-color: #140e04 !important;
+  color: #b6ad90 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .editor_atto_toolbar {
+  background-color: #1e1610 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .atto_group button {
+  color: #b6ad90 !important;
+  background-color: #1e1610 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .tox .tox-edit-area__iframe {
+  background-color: #140e04 !important;
+}
+
+html.xtec-dark .tox .tox-toolbar,
+html.xtec-dark .tox .tox-toolbar__primary {
+  background-color: #1e1610 !important;
+}
+
+/* ============================================
+   21. QUIZ / QUESTIONS
+   ============================================ */
+
+html.xtec-dark .que {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .que .formulation {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #b6ad90 !important;
+}
+
+/* Feedback boxes (outcome / comment) */
+html.xtec-dark .que .outcome {
+  background-color: #302010 !important;
+  border-color: #302010 !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .que .outcome a {
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .que .outcome hr {
+  border-top-color: #4e3e28 !important;
+}
+
+html.xtec-dark .que .comment {
+  background-color: #1e2810 !important;
+  border-color: #1e2810 !important;
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .que .comment hr {
+  border-top-color: #414833 !important;
+}
+
+/* Question info sidebar */
+html.xtec-dark .que .info {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Grade pill (purple -> warm) */
+html.xtec-dark #page-mod-quiz-attempt .que .info .grade,
+html.xtec-dark #page-mod-quiz-review .que .info .grade {
+  background-color: #2c2014 !important;
+  color: #c8a878 !important;
+}
+
+/* State pill (purple -> warm) */
+html.xtec-dark #page-mod-quiz-attempt .que .info .state,
+html.xtec-dark #page-mod-quiz-review .que .info .state {
+  color: #c8a878 !important;
+}
+
+/* State colors per result */
+html.xtec-dark .que.correct .info .state {
+  background-color: #1e2810 !important;
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .que.correct .info .grade {
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark .que.incorrect .info .state {
+  background-color: #2e1410 !important;
+  color: #d8a8a0 !important;
+}
+
+html.xtec-dark .que.incorrect .info .grade {
+  color: #d8a8a0 !important;
+}
+
+html.xtec-dark .que.partiallycorrect .info .state {
+  background-color: #302010 !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .que.partiallycorrect .info .grade {
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .que.complete .info .state {
+  background-color: #2c2014 !important;
+  color: #c8a878 !important;
+}
+
+/* Question number bubble (blue -> warm) */
+html.xtec-dark #page-mod-quiz-attempt .que h3.no .qno,
+html.xtec-dark #page-mod-quiz-review .que h3.no .qno {
+  background-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+/* Correctness badges */
+html.xtec-dark .que .correctness.correct {
+  background-color: #414833 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .que .correctness.incorrect,
+html.xtec-dark .que .correctness.notanswered {
+  background-color: #5a2820 !important;
+  color: #f0d8d0 !important;
+}
+
+html.xtec-dark .que .correctness.partiallycorrect {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+/* Correct/Incorrect/Partial question backgrounds */
+html.xtec-dark .que .correct {
+  background-color: #1e2810 !important;
+}
+
+html.xtec-dark .que .incorrect {
+  background-color: #2e1410 !important;
+}
+
+html.xtec-dark .que .partiallycorrect {
+  background-color: #302010 !important;
+}
+
+/* --- Quiz nav buttons (sidebar) --- */
+
+html.xtec-dark .qn_buttons .qnbutton {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+/* Override the bright blue #2a84f9 !important */
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton {
+  background-color: #221a0e !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton .thispageholder {
+  border: 1px solid #4e3e28 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.thispage .thispageholder {
+  border-width: 3px !important;
+  border-color: #a68a64 !important;
+}
+
+/* Nav button states */
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.correct {
+  background-color: #1e2810 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.correct .thispageholder {
+  border-color: #414833 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.incorrect {
+  background-color: #2e1410 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.incorrect .thispageholder {
+  border-color: #5a2820 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.partiallycorrect {
+  background-color: #302010 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.partiallycorrect .thispageholder {
+  border-color: #582f0e !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.blocked .trafficlight,
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.complete .trafficlight,
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.answersaved .trafficlight,
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.requiresgrading .trafficlight {
+  background-color: #3d3020 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock .qnbutton.notyetanswered .trafficlight {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark .path-mod-quiz #mod_quiz_navblock span.qnbutton {
+  background-color: #1e1610 !important;
+  color: #7a6e5a !important;
+}
+
+/* --- Drag and drop questions --- */
+
+/* Drop targets in text */
+html.xtec-dark .que.ddwtos .drop.active {
+  background-color: #2c2014 !important;
+  border-color: #4e3e28 !important;
+  color: #c2c5aa !important;
+}
+
+/* Draggable home items */
+html.xtec-dark .que.ddwtos .draghome {
+  border-color: #4e3e28 !important;
+  color: #191208 !important;
+}
+
+/* Group colors for dark mode */
+html.xtec-dark .que.ddwtos .group1,
+html.xtec-dark .que.ddimageortext .group1 {
+  background-color: #a68a64 !important;
+  color: #191208 !important;
+}
+
+html.xtec-dark .que.ddwtos .group2,
+html.xtec-dark .que.ddimageortext .group2 {
+  background-color: #936639 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .que.ddwtos .group3,
+html.xtec-dark .que.ddimageortext .group3 {
+  background-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .que.ddwtos .group4,
+html.xtec-dark .que.ddimageortext .group4 {
+  background-color: #656d4a !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .que.ddwtos .group5,
+html.xtec-dark .que.ddimageortext .group5 {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .que.ddwtos .group6,
+html.xtec-dark .que.ddimageortext .group6 {
+  background-color: #b6ad90 !important;
+  color: #191208 !important;
+}
+
+html.xtec-dark .que.ddwtos .group7,
+html.xtec-dark .que.ddimageortext .group7 {
+  background-color: #c8a878 !important;
+  color: #191208 !important;
+}
+
+html.xtec-dark .que.ddwtos .group8,
+html.xtec-dark .que.ddimageortext .group8 {
+  background-color: #a4ac86 !important;
+  color: #191208 !important;
+}
+
+/* Correct/incorrect feedback on drag items */
+html.xtec-dark .que.ddwtos span.correct {
+  background-color: #2a3318 !important;
+}
+
+html.xtec-dark .que.ddwtos span.incorrect {
+  background-color: #3a1810 !important;
+}
+
+/* Drag and drop onto image */
+html.xtec-dark .que.ddimageortext .draghome,
+html.xtec-dark .que.ddimageortext .drag {
+  border-color: #4e3e28 !important;
+}
+
+html.xtec-dark .que.ddimageortext .dropzone {
+  border-color: #4e3e28 !important;
+}
+
+html.xtec-dark .que.ddimageortext .dropbackground {
+  border-color: #4e3e28 !important;
+}
+
+/* Drag and drop markers */
+html.xtec-dark .que.ddmarker .draghomes .marker span.markertext,
+html.xtec-dark .que.ddmarker .droparea .marker span.markertext {
+  background-color: #2c2014 !important;
+  border-color: #4e3e28 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .que.ddmarker div.markertexts span.markertext {
+  background-color: #382810 !important;
+  border-color: #582f0e !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .que.ddmarker .dropbackground {
+  border-color: #4e3e28 !important;
+}
+
+/* --- Quiz pre-attempt page --- */
+
+/* Grading method info box (purple box -> warm) */
+html.xtec-dark #page-mod-quiz-view .box.quizinfo.py-3 p,
+html.xtec-dark #page-mod-quiz-review .box.quizinfo.py-3 p {
+  background-color: #2c2014 !important;
+  color: #c8a878 !important;
+}
+
+/* Previous attempts summary table */
+html.xtec-dark #page-mod-quiz-view .generaltable tbody tr:hover {
+  background-color: #2c2014 !important;
+}
+
+/* Graded attempt row highlight */
+html.xtec-dark .path-mod-quiz .gradedattempt,
+html.xtec-dark .path-mod-quiz table tbody tr.gradedattempt > td,
+html.xtec-dark .path-mod-quiz table tbody tr.gradedattempt > td.sticky-column {
+  border-color: #414833 !important;
+  background-color: #1e2810 !important;
+}
+
+/* Review link buttons in attempts table */
+html.xtec-dark #page-mod-quiz-view .quizattemptsummary tbody .lastcol a {
+  background: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark #page-mod-quiz-view .quizattemptsummary tbody .lastcol a:hover {
+  background: #936639 !important;
+}
+
+/* Quiz review summary table */
+html.xtec-dark table.quizreviewsummary th.cell {
+  background-color: #1e1610 !important;
+  color: #c8a878 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark table.quizreviewsummary td.cell {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .quizreviewsummary.generaltable th {
+  border-color: #3d3020 !important;
+}
+
+/* Feedback box */
+html.xtec-dark #page-mod-quiz-view .generalbox#feedback {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+/* Last attempt row border */
+html.xtec-dark #page-mod-quiz-report tr.lastrowforattempt {
+  border-bottom-color: #3d3020 !important;
+}
+
+/* ============================================
+   22. FORUM
+   ============================================ */
+
+html.xtec-dark .forumpost {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .forumpost .header {
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .discussion-list .topic {
+  color: #c2c5aa !important;
+}
+
+/* ============================================
+   23. UTILITY / BACKGROUND CLASSES
+   ============================================ */
+
+html.xtec-dark .bg-white {
+  background-color: #191208 !important;
+}
+
+html.xtec-dark .bg-light {
+  background-color: #1e1610 !important;
+}
+
+html.xtec-dark .bg-secondary {
+  background-color: #2c2014 !important;
+}
+
+html.xtec-dark .bg-dark {
+  background-color: #140e04 !important;
+}
+
+html.xtec-dark .text-dark {
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .text-muted {
+  color: #7a6e5a !important;
+}
+
+html.xtec-dark .text-secondary {
+  color: #a09880 !important;
+}
+
+html.xtec-dark .text-body {
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .border {
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .border-bottom {
+  border-bottom-color: #3d3020 !important;
+}
+
+html.xtec-dark .border-top {
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .shadow,
+html.xtec-dark .shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ============================================
+   24. PAGINATION
+   ============================================ */
+
+html.xtec-dark .page-link {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .page-link:hover {
+  background-color: #2c2014 !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .page-item.active .page-link {
+  background-color: #7f4f24 !important;
+  border-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .page-item.disabled .page-link {
+  background-color: #160f06 !important;
+  color: #4a3e28 !important;
+}
+
+/* ============================================
+   25. BADGES
+   ============================================ */
+
+html.xtec-dark .badge-secondary,
+html.xtec-dark .badge-light {
+  background-color: #3d3020 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .badge-primary {
+  background-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .badge-success {
+  background-color: #414833 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .badge-info {
+  background-color: #2c2014 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .badge-warning {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .badge-danger {
+  background-color: #5a2820 !important;
+  color: #f0d8d0 !important;
+}
+
+html.xtec-dark .badge-dark {
+  background-color: #3d3020 !important;
+  color: #ddd8c4 !important;
+}
+
+/* Completion pill on activity page ("Feta: Mostra") */
+html.xtec-dark .path-mod .activity-information .completion-info {
+  border-bottom-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .completion-info .badge,
+html.xtec-dark .activity-information .badge {
+  background-color: #382810 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .courseindex .courseindex-item .completioninfo.completion_complete {
+  color: #a4ac86 !important;
+}
+
+/* ============================================
+   26. PROGRESS BAR
+   ============================================ */
+
+html.xtec-dark .progress {
+  background-color: #1e1610 !important;
+}
+
+html.xtec-dark .progress-bar {
+  background-color: #7f4f24 !important;
+}
+
+/* ============================================
+   27. FILE PICKER
+   ============================================ */
+
+html.xtec-dark .filepicker-filelist,
+html.xtec-dark .filemanager {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .fp-navbar {
+  background-color: #1e1610 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .fp-content {
+  background-color: #221a0e !important;
+}
+
+/* ============================================
+   28. GRADE TABLE
+   ============================================ */
+
+html.xtec-dark .user-grade .generaltable th,
+html.xtec-dark .gradetreebox th {
+  background-color: #1e1610 !important;
+}
+
+html.xtec-dark .user-grade .generaltable td,
+html.xtec-dark .gradetreebox td {
+  background-color: #221a0e !important;
+}
+
+/* ============================================
+   29. SCROLLBAR GLOBAL
+   ============================================ */
+
+html.xtec-dark ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html.xtec-dark ::-webkit-scrollbar-track {
+  background: #191208;
+}
+
+html.xtec-dark ::-webkit-scrollbar-thumb {
+  background: #3d3020;
+  border-radius: 5px;
+}
+
+html.xtec-dark ::-webkit-scrollbar-thumb:hover {
+  background: #4e3e28;
+}
+
+/* ============================================
+   30. MISCELLANEOUS
+   ============================================ */
+
+/* Selection highlight */
+html.xtec-dark ::selection {
+  background: rgba(166, 138, 100, 0.4);
+  color: #f0ead6;
+}
+
+/* User picture borders */
+html.xtec-dark .userpicture {
+  border-color: #3d3020 !important;
+}
+
+/* Completion checkboxes */
+html.xtec-dark .completioncheck {
+  color: #a4ac86 !important;
+}
+
+/* Activity dates */
+html.xtec-dark .activity-dates {
+  color: #7a6e5a !important;
+}
+
+/* Content bank */
+html.xtec-dark .content-bank-container {
+  background-color: #191208 !important;
+}
+
+/* Submission status */
+html.xtec-dark .submissionstatustable td {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+}
+
+/* Embedded iframes */
+html.xtec-dark iframe {
+  border-color: #3d3020 !important;
+}
+
+/* H5P content wrapper */
+html.xtec-dark .h5p-iframe-wrapper {
+  background-color: #191208 !important;
+}
+
+/* Course overview block on dashboard */
+html.xtec-dark [data-region="courses-view"] .card {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .course-info-container {
+  background-color: #221a0e !important;
+}
+
+/* ============================================
+   31. COMPLETION PROGRESS BLOCK (barContainer)
+   ============================================ */
+
+html.xtec-dark .block_completion_progress .barContainer {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .block_completion_progress .barRow {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .block_completion_progress .progressBarCell {
+  border-left-color: #3d3020 !important;
+  border-top-color: #3d3020 !important;
+}
+
+html.xtec-dark .block_completion_progress .barModeScroll .progressBarCell:last-of-type {
+  border-right-color: #3d3020 !important;
+}
+
+html.xtec-dark .block_completion_progress .progressEventInfo {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .block_completion_progress .progressPercentage {
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .block_completion_progress .triangle-polygon {
+  fill: rgba(25, 18, 8, 0.5) !important;
+  stroke: #3d3020 !important;
+}
+
+/* ============================================
+   32. IOC CATEGORIES
+   ============================================ */
+
+html.xtec-dark .categoria {
+  background-color: #2c2014 !important;
+  border-color: #3d3020 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .categoria.eoi-categoria {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+/* ============================================
+   33. IOC EOI WORK PLAN
+   ============================================ */
+
+html.xtec-dark .eoi-work-plan-header {
+  background: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .eoi-work-plan-header-duration {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .eoi-work-plan-body {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .eoi-work-plan-footer {
+  background-color: #1e1610 !important;
+  color: #a09880 !important;
+}
+
+html.xtec-dark .eoi-work-plan-deadline-date {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+/* ============================================
+   34. IOC PLANTILLA TASCA (Task Template)
+   ============================================ */
+
+html.xtec-dark .plantilla-tasca .modal-header {
+  background: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .plantilla-tasca .tasca-enunciat {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.xtec-dark .plantilla-tasca .botons-contextuals > button {
+  background-color: #221a0e !important;
+  color: #c8a878 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .plantilla-tasca .botons-contextuals > button:hover {
+  background-color: #2c2014 !important;
+}
+
+html.xtec-dark .plantilla-tasca .termini-de-lliurament {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .plantilla-tasca .valoracio-professor {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.xtec-dark .plantilla-tasca .requadre-valoracio-professor {
+  background-color: #1e1610 !important;
+  color: #b6ad90 !important;
+}
+
+/* ============================================
+   35. IOC TAULES (Custom Tables)
+   ============================================ */
+
+html.xtec-dark .taula-simple thead th {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .taula-simple tbody th {
+  background-color: #1e1610 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .taula-simple td {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .taula-colors thead th {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .taula-colors tbody th {
+  background-color: #1e1610 !important;
+  color: #c2c5aa !important;
+}
+
+html.xtec-dark .taula-colors td {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+  border-color: #3d3020 !important;
+}
+
+/* Taula flex */
+html.xtec-dark .taula-flex:first-of-type .fila-flex {
+  background-color: #582f0e !important;
+  color: #f0ead6 !important;
+}
+
+html.xtec-dark .taula-flex .fila-flex {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .taula-flex.fila:nth-child(odd) .fila-flex {
+  background-color: #1c1408 !important;
+}
+
+html.xtec-dark .taula-flex.fila:nth-child(even) .fila-flex {
+  background-color: #221a0e !important;
+}
+
+/* ============================================
+   36. IOC GRAELLA (Grid Layout)
+   ============================================ */
+
+html.xtec-dark .graella > div {
+  background-color: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark .graella.fons > div {
+  background-color: #1e1610 !important;
+}
+
+html.xtec-dark .graella.fons > div:nth-child(even) {
+  background-color: #221a0e !important;
+}
+
+html.xtec-dark .graella.vora,
+html.xtec-dark .graella.vora > div {
+  border-color: #3d3020 !important;
+}
+
+/* ============================================
+   37. IOC BANNER
+   ============================================ */
+
+html.xtec-dark .banner-cell,
+html.xtec-dark .banner-info {
+  background-color: #1e1610 !important;
+  color: #b6ad90 !important;
+}
+
+/* ============================================
+   38. IOC ALERTA / PERILL
+   ============================================ */
+
+html.xtec-dark .alerta,
+html.xtec-dark .perill {
+  background-color: #381c0a !important;
+  border-color: #582f0e !important;
+  color: #dcc098 !important;
+}
+
+/* ============================================
+   39. PESTANYES (Tabs) — active state fix
+   ============================================ */
+
+html.xtec-dark .pestanyes .nav-tabs .nav-link {
+  background-color: #221a0e !important;
+  border-color: #3d3020 !important;
+  color: #a09880 !important;
+}
+
+html.xtec-dark .pestanyes .nav-tabs .nav-link.active {
+  background-color: #2c2014 !important;
+  border-color: #3d3020 !important;
+  border-bottom-color: #2c2014 !important;
+  color: #ddd8c4 !important;
+}
+
+html.xtec-dark .pestanyes .nav-tabs .nav-link:hover {
+  background-color: #2c2014 !important;
+  color: #c2c5aa !important;
+}
+
+/* ============================================
+   40. COLLAPSABLE BUTTONS FIX
+   ============================================ */
+
+html.xtec-dark .collapsable-primari .btn.btn-secondary {
+  background-color: #221a0e !important;
+  border-color: #a68a64 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .collapsable-primari .btn.btn-secondary:hover {
+  background-color: #2c2014 !important;
+}
+
+/* ============================================
+   41. BG-PRIMARY-LIGHT
+   ============================================ */
+
+html.xtec-dark .bg-primary-light {
+  background-color: #2c2014 !important;
+}
+
+/* ============================================
+   42. LOGIN SECTION GRADIENT
+   ============================================ */
+
+html.xtec-dark #login-section1 {
+  background: linear-gradient(135deg, #191208 0%, #221a0e 50%, #2c2014 100%) !important;
+}
+
+/* ============================================
+   43. SURVEY / RESPONDENTS
+   ============================================ */
+
+html.xtec-dark .respondentsnavbar {
+  background-color: #1e1610 !important;
+  color: #b6ad90 !important;
+}
+
+/* ============================================
+   44. IOC CONTENT BOXES (exercises, reading, feedback)
+   ============================================ */
+
+/* Reading context box (white bg + shadow) */
+html.xtec-dark .context-de-lectura,
+html.xtec-dark .context-de-lectura.ample,
+html.xtec-dark .c4lv-readingcontext {
+  background-color: #221a0e !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
+  color: #b6ad90 !important;
+}
+
+/* Multipurpose box (light blue-grey bg) */
+html.xtec-dark .requadre-multiproposit,
+html.xtec-dark .requadre-multiproposit.ample,
+html.xtec-dark .c4lv-requadremultiproposit,
+html.xtec-dark .c4lv-allpurposecard {
+  background: #2c2014 !important;
+  color: #b6ad90 !important;
+}
+
+/* Multipurpose variants */
+html.xtec-dark .requadre-multiproposit.groc,
+html.xtec-dark .c4lv-requadremultiproposit.c4l-groc-variant {
+  background: #302010 !important;
+  color: #dcc098 !important;
+}
+
+html.xtec-dark .requadre-multiproposit.blau,
+html.xtec-dark .c4lv-requadremultiproposit.c4l-blau-variant {
+  background: #1e2418 !important;
+  color: #a4ac86 !important;
+}
+
+/* Correct answer box (light green bg) */
+html.xtec-dark .requadre-correcte,
+html.xtec-dark .requadre-correcte.ample,
+html.xtec-dark .exit,
+html.xtec-dark .c4l-dodontcards-do {
+  background: #1e2810 !important;
+  color: #a4ac86 !important;
+}
+
+/* Incorrect answer box (light red bg) */
+html.xtec-dark .requadre-incorrecte,
+html.xtec-dark .requadre-incorrecte.ample,
+html.xtec-dark .c4l-dodontcards-dont {
+  background: #2e1410 !important;
+  color: #d8a8a0 !important;
+}
+
+/* Attempts box / teacher grade box (light lavender bg) */
+html.xtec-dark .requadre-intents,
+html.xtec-dark .requadre-valoracio-professor {
+  background-color: #2c2014 !important;
+  color: #b6ad90 !important;
+}
+
+/* Teacher feedback box (white bg + shadow) */
+html.xtec-dark .feedback-del-professor,
+html.xtec-dark .c4lv-expectedfeedback,
+html.xtec-dark .c4lv-example {
+  background-color: #221a0e !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
+  color: #b6ad90 !important;
+}
+
+/* Key concept (light blue + left border) */
+html.xtec-dark .c4lv-keyconcept {
+  background: #2c2014 !important;
+  border-left-color: #a68a64 !important;
+  color: #b6ad90 !important;
+}
+
+/* Tip (pink-purple bg + left border) */
+html.xtec-dark .c4lv-tip {
+  background: #2a1828 !important;
+  border-left-color: #8a4a7a !important;
+  color: #c8a8c0 !important;
+}
+
+/* Reminder (light blue bg + left border) */
+html.xtec-dark .c4lv-reminder {
+  background: #1e2418 !important;
+  border-left-color: #656d4a !important;
+  color: #a4ac86 !important;
+}
+
+/* Attention (light orange bg + left border) */
+html.xtec-dark .c4lv-attention {
+  background: #381c0a !important;
+  border-left-color: #936639 !important;
+  color: #dcc098 !important;
+}
+
+/* Learning outcomes */
+html.xtec-dark .c4lv-learningoutcomes {
+  background: #2c2014 !important;
+  color: #b6ad90 !important;
+}
+
+/* Procedural context text */
+html.xtec-dark .context-procedimental,
+html.xtec-dark .paragraf-context,
+html.xtec-dark .c4lv-proceduralcontext {
+  color: #c8a878 !important;
+}
+
+/* Tags, estimated time, due date, grading (pill-like) */
+html.xtec-dark .c4lv-tag,
+html.xtec-dark .c4lv-estimatedtime,
+html.xtec-dark .c4lv-duedate,
+html.xtec-dark .c4lv-gradingvalue,
+html.xtec-dark .temps-previst-icona,
+html.xtec-dark .temps-previst-text {
+  background-color: #2c2014 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .c4lv-inlinetag {
+  background-color: #7f4f24 !important;
+  color: #f0ead6 !important;
+}
+
+/* Enunciat (exercise statement) */
+html.xtec-dark .enunciat span {
+  color: #a09880 !important;
+}
+
+/* Citation line */
+html.xtec-dark .cita-linia {
+  border-left-color: #a68a64 !important;
+}
+
+/* Survey labels */
+html.xtec-dark .ioc-etiqueta-enquesta {
+  background-color: #2c2014 !important;
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .ioc-etiqueta-enquesta-titol {
+  color: #c8a878 !important;
+}
+
+html.xtec-dark .ioc-etiqueta-enquesta-boto {
+  background-color: #221a0e !important;
+  color: #c8a878 !important;
+}
+
+/* ============================================
+   45. GENERIC DIV WHITE BG CATCHALL
+   ============================================ */
+
+/* Catch any remaining white bg inside activity items */
+html.xtec-dark .section li.activity div[style*="background-color: #fff"],
+html.xtec-dark .section li.activity div[style*="background-color: white"],
+html.xtec-dark .section li.activity div[style*="background: #fff"],
+html.xtec-dark .section li.activity div[style*="background: white"] {
+  background-color: #221a0e !important;
+  background: #221a0e !important;
+}
+
+/* Smooth transition for toggle */
+html.xtec-dark * {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}

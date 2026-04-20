@@ -2843,6 +2843,59 @@ html.xtec-dark .section li.activity div[style*="background: white"] {
   background: #221a0e !important;
 }
 
+/* Book module chapter content — catchall for light-colored divs */
+html.xtec-dark #mod_book-chapter div[style*="background-color: #fff"],
+html.xtec-dark #mod_book-chapter div[style*="background-color: white"],
+html.xtec-dark #mod_book-chapter div[style*="background-color: rgb(255"],
+html.xtec-dark #mod_book-chapter div[style*="background: #fff"],
+html.xtec-dark #mod_book-chapter div[style*="background: white"],
+html.xtec-dark #mod_book-chapter div[style*="background:#fff"],
+html.xtec-dark #mod_book-chapter div[style*="background:white"] {
+  background-color: #221a0e !important;
+  background: #221a0e !important;
+  color: #b6ad90 !important;
+}
+
+/* Book chapter: light pastels commonly used (light blue, green, yellow, pink) */
+html.xtec-dark #mod_book-chapter div[style*="#f1f5fe"],
+html.xtec-dark #mod_book-chapter div[style*="#F1F5FE"],
+html.xtec-dark #mod_book-chapter div[style*="#eff8fd"],
+html.xtec-dark #mod_book-chapter div[style*="#EFF8FD"],
+html.xtec-dark #mod_book-chapter div[style*="#fbeffa"],
+html.xtec-dark #mod_book-chapter div[style*="#FBEFFA"] {
+  background-color: #2c2014 !important;
+  background: #2c2014 !important;
+  color: #b6ad90 !important;
+}
+
+html.xtec-dark #mod_book-chapter div[style*="#f1fbf5"],
+html.xtec-dark #mod_book-chapter div[style*="#F1FBF5"] {
+  background-color: #1e2810 !important;
+  background: #1e2810 !important;
+  color: #a4ac86 !important;
+}
+
+html.xtec-dark #mod_book-chapter div[style*="#ffefef"],
+html.xtec-dark #mod_book-chapter div[style*="#FFEFEF"] {
+  background-color: #2e1410 !important;
+  background: #2e1410 !important;
+  color: #d8a8a0 !important;
+}
+
+html.xtec-dark #mod_book-chapter div[style*="#fef6ed"],
+html.xtec-dark #mod_book-chapter div[style*="#FEF6ED"],
+html.xtec-dark #mod_book-chapter div[style*="#fff4d6"] {
+  background-color: #381c0a !important;
+  background: #381c0a !important;
+  color: #dcc098 !important;
+}
+
+/* Generic container wrappers inside book chapter that show through as white */
+html.xtec-dark #mod_book-chapter > div,
+html.xtec-dark #mod_book-chapter .no-overflow {
+  background-color: transparent !important;
+}
+
 /* Smooth transition for toggle */
 html.xtec-dark * {
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;

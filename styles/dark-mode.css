@@ -2645,6 +2645,7 @@ html.xtec-dark .respondentsnavbar {
 /* Reading context box (white bg + shadow) */
 html.xtec-dark .context-de-lectura,
 html.xtec-dark .context-de-lectura.ample,
+html.xtec-dark .c4l-readingcontext,
 html.xtec-dark .c4lv-readingcontext {
   background-color: #221a0e !important;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
@@ -2654,7 +2655,9 @@ html.xtec-dark .c4lv-readingcontext {
 /* Multipurpose box (light blue-grey bg) */
 html.xtec-dark .requadre-multiproposit,
 html.xtec-dark .requadre-multiproposit.ample,
+html.xtec-dark .c4l-requadremultiproposit,
 html.xtec-dark .c4lv-requadremultiproposit,
+html.xtec-dark .c4l-allpurposecard,
 html.xtec-dark .c4lv-allpurposecard {
   background: #2c2014 !important;
   color: #b6ad90 !important;
@@ -2662,12 +2665,14 @@ html.xtec-dark .c4lv-allpurposecard {
 
 /* Multipurpose variants */
 html.xtec-dark .requadre-multiproposit.groc,
+html.xtec-dark .c4l-requadremultiproposit.c4l-groc-variant,
 html.xtec-dark .c4lv-requadremultiproposit.c4l-groc-variant {
   background: #302010 !important;
   color: #dcc098 !important;
 }
 
 html.xtec-dark .requadre-multiproposit.blau,
+html.xtec-dark .c4l-requadremultiproposit.c4l-blau-variant,
 html.xtec-dark .c4lv-requadremultiproposit.c4l-blau-variant {
   background: #1e2418 !important;
   color: #a4ac86 !important;
@@ -2677,7 +2682,8 @@ html.xtec-dark .c4lv-requadremultiproposit.c4l-blau-variant {
 html.xtec-dark .requadre-correcte,
 html.xtec-dark .requadre-correcte.ample,
 html.xtec-dark .exit,
-html.xtec-dark .c4l-dodontcards-do {
+html.xtec-dark .c4l-dodontcards-do,
+html.xtec-dark .c4l-dodontcards .c4l-dodontcards-do {
   background: #1e2810 !important;
   color: #a4ac86 !important;
 }
@@ -2685,7 +2691,8 @@ html.xtec-dark .c4l-dodontcards-do {
 /* Incorrect answer box (light red bg) */
 html.xtec-dark .requadre-incorrecte,
 html.xtec-dark .requadre-incorrecte.ample,
-html.xtec-dark .c4l-dodontcards-dont {
+html.xtec-dark .c4l-dodontcards-dont,
+html.xtec-dark .c4l-dodontcards .c4l-dodontcards-dont {
   background: #2e1410 !important;
   color: #d8a8a0 !important;
 }
@@ -2697,16 +2704,20 @@ html.xtec-dark .requadre-valoracio-professor {
   color: #b6ad90 !important;
 }
 
-/* Teacher feedback box (white bg + shadow) */
+/* Teacher feedback / example box (white bg + shadow) */
 html.xtec-dark .feedback-del-professor,
+html.xtec-dark .c4l-expectedfeedback,
 html.xtec-dark .c4lv-expectedfeedback,
+html.xtec-dark .c4l-example,
 html.xtec-dark .c4lv-example {
   background-color: #221a0e !important;
+  background: #221a0e !important;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
   color: #b6ad90 !important;
 }
 
 /* Key concept (light blue + left border) */
+html.xtec-dark .c4l-keyconcept,
 html.xtec-dark .c4lv-keyconcept {
   background: #2c2014 !important;
   border-left-color: #a68a64 !important;
@@ -2714,6 +2725,7 @@ html.xtec-dark .c4lv-keyconcept {
 }
 
 /* Tip (pink-purple bg + left border) */
+html.xtec-dark .c4l-tip,
 html.xtec-dark .c4lv-tip {
   background: #2a1828 !important;
   border-left-color: #8a4a7a !important;
@@ -2721,6 +2733,7 @@ html.xtec-dark .c4lv-tip {
 }
 
 /* Reminder (light blue bg + left border) */
+html.xtec-dark .c4l-reminder,
 html.xtec-dark .c4lv-reminder {
   background: #1e2418 !important;
   border-left-color: #656d4a !important;
@@ -2728,6 +2741,7 @@ html.xtec-dark .c4lv-reminder {
 }
 
 /* Attention (light orange bg + left border) */
+html.xtec-dark .c4l-attention,
 html.xtec-dark .c4lv-attention {
   background: #381c0a !important;
   border-left-color: #936639 !important;
@@ -2735,6 +2749,7 @@ html.xtec-dark .c4lv-attention {
 }
 
 /* Learning outcomes */
+html.xtec-dark .c4l-learningoutcomes,
 html.xtec-dark .c4lv-learningoutcomes {
   background: #2c2014 !important;
   color: #b6ad90 !important;
@@ -2743,14 +2758,19 @@ html.xtec-dark .c4lv-learningoutcomes {
 /* Procedural context text */
 html.xtec-dark .context-procedimental,
 html.xtec-dark .paragraf-context,
+html.xtec-dark .c4l-proceduralcontext,
 html.xtec-dark .c4lv-proceduralcontext {
   color: #c8a878 !important;
 }
 
 /* Tags, estimated time, due date, grading (pill-like) */
+html.xtec-dark .c4l-tag,
 html.xtec-dark .c4lv-tag,
+html.xtec-dark .c4l-estimatedtime,
 html.xtec-dark .c4lv-estimatedtime,
+html.xtec-dark .c4l-duedate,
 html.xtec-dark .c4lv-duedate,
+html.xtec-dark .c4l-gradingvalue,
 html.xtec-dark .c4lv-gradingvalue,
 html.xtec-dark .temps-previst-icona,
 html.xtec-dark .temps-previst-text {
@@ -2758,9 +2778,31 @@ html.xtec-dark .temps-previst-text {
   color: #c8a878 !important;
 }
 
+html.xtec-dark .c4l-inlinetag,
 html.xtec-dark .c4lv-inlinetag {
   background-color: #7f4f24 !important;
   color: #f0ead6 !important;
+}
+
+/* C4L plugin container */
+html.xtec-dark .c4l-plugin-container {
+  background-color: #1e1610 !important;
+  border-color: #3d3020 !important;
+  color: #b6ad90 !important;
+}
+
+/* Book module navigation buttons (light grey #dee2e6) */
+html.xtec-dark .path-mod-book .btn-previous,
+html.xtec-dark .path-mod-book .btn-next {
+  background: #2c2014 !important;
+  color: #c8a878 !important;
+  border-color: #3d3020 !important;
+}
+
+html.xtec-dark .path-mod-book .btn-previous:hover,
+html.xtec-dark .path-mod-book .btn-next:hover {
+  background: #382810 !important;
+  color: #ddd8c4 !important;
 }
 
 /* Enunciat (exercise statement) */

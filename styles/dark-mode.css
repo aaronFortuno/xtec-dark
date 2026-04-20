@@ -2843,86 +2843,87 @@ html.xtec-dark .section li.activity div[style*="background: white"] {
   background: #221a0e !important;
 }
 
-/* Book module chapter: inline-styled divs with hardcoded light colors.
-   Uses case-insensitive attribute matching (i modifier) to catch both
-   uppercase and lowercase hex values. */
+/* Inline-styled divs with hardcoded light backgrounds. These appear in
+   any user-editable content area (book chapters, quiz questions, forum
+   posts, page/label bodies, assignment descriptions) where teachers
+   paste HTML with inline styles from visual editors.
+   Uses [style*="..." i] for case-insensitive matching. */
 
 /* Pure white / near-white backgrounds */
-html.xtec-dark #mod_book-chapter div[style*="#fff" i],
-html.xtec-dark #mod_book-chapter div[style*="white" i],
-html.xtec-dark #mod_book-chapter div[style*="rgb(255, 255, 255)" i],
-html.xtec-dark #mod_book-chapter div[style*="#ffffff" i] {
+html.xtec-dark #region-main div[style*="#fff" i],
+html.xtec-dark #region-main div[style*="white" i],
+html.xtec-dark #region-main div[style*="rgb(255, 255, 255)" i],
+html.xtec-dark #region-main div[style*="#ffffff" i] {
   background-color: #221a0e !important;
   background: #221a0e !important;
   color: #b6ad90 !important;
 }
 
-/* Light blue / lavender tints (#ECF2FF, #EBF1FF, #F1F5FE, #EFF0FF, #EFF6FE,
-   #F5F8FF, #E9F1FC, #F2F5FD, #EAEFFA, #EDF2FE, #EFF8FD, #E4F7FF) */
-html.xtec-dark #mod_book-chapter div[style*="#ecf2ff" i],
-html.xtec-dark #mod_book-chapter div[style*="#ebf1ff" i],
-html.xtec-dark #mod_book-chapter div[style*="#f1f5fe" i],
-html.xtec-dark #mod_book-chapter div[style*="#eff0ff" i],
-html.xtec-dark #mod_book-chapter div[style*="#eff6fe" i],
-html.xtec-dark #mod_book-chapter div[style*="#f5f8ff" i],
-html.xtec-dark #mod_book-chapter div[style*="#e9f1fc" i],
-html.xtec-dark #mod_book-chapter div[style*="#f2f5fd" i],
-html.xtec-dark #mod_book-chapter div[style*="#eaeffa" i],
-html.xtec-dark #mod_book-chapter div[style*="#edf2fe" i],
-html.xtec-dark #mod_book-chapter div[style*="#eff8fd" i],
-html.xtec-dark #mod_book-chapter div[style*="#e4f7ff" i],
-html.xtec-dark #mod_book-chapter div[style*="#def3fc" i] {
+/* Light blue / lavender tints */
+html.xtec-dark #region-main div[style*="#ecf2ff" i],
+html.xtec-dark #region-main div[style*="#ebf1ff" i],
+html.xtec-dark #region-main div[style*="#f1f5fe" i],
+html.xtec-dark #region-main div[style*="#eff0ff" i],
+html.xtec-dark #region-main div[style*="#eff6fe" i],
+html.xtec-dark #region-main div[style*="#f5f8ff" i],
+html.xtec-dark #region-main div[style*="#e9f1fc" i],
+html.xtec-dark #region-main div[style*="#f2f5fd" i],
+html.xtec-dark #region-main div[style*="#eaeffa" i],
+html.xtec-dark #region-main div[style*="#edf2fe" i],
+html.xtec-dark #region-main div[style*="#eff8fd" i],
+html.xtec-dark #region-main div[style*="#e4f7ff" i],
+html.xtec-dark #region-main div[style*="#def3fc" i] {
   background-color: #2c2014 !important;
   background: #2c2014 !important;
   color: #b6ad90 !important;
 }
 
-/* Light pink / purple tints (#FBEFFA, #F6E3FF, #FBF3FF) */
-html.xtec-dark #mod_book-chapter div[style*="#fbeffa" i],
-html.xtec-dark #mod_book-chapter div[style*="#f6e3ff" i],
-html.xtec-dark #mod_book-chapter div[style*="#fbf3ff" i] {
+/* Light pink / purple tints */
+html.xtec-dark #region-main div[style*="#fbeffa" i],
+html.xtec-dark #region-main div[style*="#f6e3ff" i],
+html.xtec-dark #region-main div[style*="#fbf3ff" i] {
   background-color: #2a1828 !important;
   background: #2a1828 !important;
   color: #c8a8c0 !important;
 }
 
-/* Light green tints (#F1FBF5, #D7E4D6, #DFF4D8, #E7F1C3) */
-html.xtec-dark #mod_book-chapter div[style*="#f1fbf5" i],
-html.xtec-dark #mod_book-chapter div[style*="#d7e4d6" i],
-html.xtec-dark #mod_book-chapter div[style*="#dff4d8" i],
-html.xtec-dark #mod_book-chapter div[style*="#e7f1c3" i] {
+/* Light green tints */
+html.xtec-dark #region-main div[style*="#f1fbf5" i],
+html.xtec-dark #region-main div[style*="#d7e4d6" i],
+html.xtec-dark #region-main div[style*="#dff4d8" i],
+html.xtec-dark #region-main div[style*="#e7f1c3" i] {
   background-color: #1e2810 !important;
   background: #1e2810 !important;
   color: #a4ac86 !important;
 }
 
-/* Light red / pink tints (#FFEFEF, #FDD, #F4D6D2, #FEF6ED) */
-html.xtec-dark #mod_book-chapter div[style*="#ffefef" i],
-html.xtec-dark #mod_book-chapter div[style*="#f4d6d2" i],
-html.xtec-dark #mod_book-chapter div[style*="#fdd" i] {
+/* Light red / pink tints */
+html.xtec-dark #region-main div[style*="#ffefef" i],
+html.xtec-dark #region-main div[style*="#f4d6d2" i],
+html.xtec-dark #region-main div[style*="#fdd" i] {
   background-color: #2e1410 !important;
   background: #2e1410 !important;
   color: #d8a8a0 !important;
 }
 
-/* Light orange / yellow tints (#FEF6ED, #FFF4D6, #FCEFDC, #FFF6CF, #F3F2AA) */
-html.xtec-dark #mod_book-chapter div[style*="#fef6ed" i],
-html.xtec-dark #mod_book-chapter div[style*="#fff4d6" i],
-html.xtec-dark #mod_book-chapter div[style*="#fcefdc" i],
-html.xtec-dark #mod_book-chapter div[style*="#fff6cf" i],
-html.xtec-dark #mod_book-chapter div[style*="#f3f2aa" i] {
+/* Light orange / yellow tints */
+html.xtec-dark #region-main div[style*="#fef6ed" i],
+html.xtec-dark #region-main div[style*="#fff4d6" i],
+html.xtec-dark #region-main div[style*="#fcefdc" i],
+html.xtec-dark #region-main div[style*="#fff6cf" i],
+html.xtec-dark #region-main div[style*="#f3f2aa" i] {
   background-color: #381c0a !important;
   background: #381c0a !important;
   color: #dcc098 !important;
 }
 
-/* Light grey tints (#F6F7F8, #F0F0F0, #E6E6E6, #F3F6FC, #F8F9FA, #FAFAFA) */
-html.xtec-dark #mod_book-chapter div[style*="#f6f7f8" i],
-html.xtec-dark #mod_book-chapter div[style*="#f0f0f0" i],
-html.xtec-dark #mod_book-chapter div[style*="#e6e6e6" i],
-html.xtec-dark #mod_book-chapter div[style*="#f3f6fc" i],
-html.xtec-dark #mod_book-chapter div[style*="#f8f9fa" i],
-html.xtec-dark #mod_book-chapter div[style*="#fafafa" i] {
+/* Light grey tints */
+html.xtec-dark #region-main div[style*="#f6f7f8" i],
+html.xtec-dark #region-main div[style*="#f0f0f0" i],
+html.xtec-dark #region-main div[style*="#e6e6e6" i],
+html.xtec-dark #region-main div[style*="#f3f6fc" i],
+html.xtec-dark #region-main div[style*="#f8f9fa" i],
+html.xtec-dark #region-main div[style*="#fafafa" i] {
   background-color: #1e1610 !important;
   background: #1e1610 !important;
   color: #b6ad90 !important;
